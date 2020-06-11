@@ -3,13 +3,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registration</title>
+    <title>Edit Profile</title>
 </head>
 <body>
     {% block content %}
-    <h1 class="text-center">Register</h1>
-        <div class="col-md-6 offset-md-3">
-            <form method="POST" action="{% url 'register' %}">
+    <h1 class="text-center">Edit Profile</h1>
+            <form method="POST" action="{% url 'edit_profile' %}">
                 {% csrf_token %}
                 {% if form.errors %}
                     <div class="alert alert-warning alert-dismissable" role="alert">
@@ -28,9 +27,10 @@
 
                 {{ form.as_p }}
 
-                <input type="submit" value="Register" class="btn btn-primary">
+                <input type="submit" value="Edit Profile" class="btn btn-primary">
             </form>
-        </div>
+        <br>
+        <p><a href="{% url 'change_password' %}">Click Here</a> To Change Your Password</p>
     {% endblock %}
 </body>
 </html>
