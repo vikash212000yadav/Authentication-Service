@@ -9,6 +9,5 @@ A user authentication web app.
     - View Profile
     - Edit Profile
     - Change Password
-
-<br>    
-\*<small>Third-Party Authentication Feature is to Added.</small>
+    
+<small>\*Third-Party Authentication Feature is to Added.</small>
